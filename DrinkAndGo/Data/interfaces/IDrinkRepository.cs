@@ -8,9 +8,9 @@ namespace DrinkAndGo.Data.interfaces
 {
     interface IDrinkRepository
     {
-         IEnumerable<Drink> Drink{ get; set; }
+         IEnumerable<Drink> Drink{ get;  }
 
-        IEnumerable<Drink> PreferredDrinks { get; set; }
+        IEnumerable<Drink> PreferredDrinks { get;  }
 
         Drink GetDrinkById (int drinkId );
     }
