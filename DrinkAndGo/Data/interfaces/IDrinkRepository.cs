@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrinkAndGo.Data.interfaces
 {
-    interface IDrinkRepository
+   public interface IDrinkRepository
     {
          IEnumerable<Drink> Drink{ get;  }
 
