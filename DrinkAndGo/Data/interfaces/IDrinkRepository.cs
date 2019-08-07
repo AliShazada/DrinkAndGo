@@ -8,7 +8,7 @@ namespace DrinkAndGo.Data.interfaces
 {
    public interface IDrinkRepository
     {
-         IEnumerable<Drink> Drink{ get;  }
+        IEnumerable<Drink> Drinks{ get;  }
 
         IEnumerable<Drink> PreferredDrinks { get;  }
 

@@ -11,7 +11,7 @@ namespace DrinkAndGo.Data.mocks
     {
         private readonly ICategoryRepository _categoryRepository = new MockCategoryRepository();
 
-        public IEnumerable<Drink> Drink {
+        public IEnumerable<Drink> Drinks {
             get
             {
                 return new List<Drink>

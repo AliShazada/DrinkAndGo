@@ -1,4 +1,5 @@
 ﻿using DrinkAndGo.Data.interfaces;
+using DrinkAndGo.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,8 +22,16 @@ namespace DrinkAndGo.Controllers
 
         public ViewResult List()
         {
-            var drinks = _drinkRepository.Drink;
-            return View(drinks);
+
+            ViewBag.Name = "Dotnet, How ?";
+
+            
+            DrinkListViewModel viewmodel = new DrinkListViewModel();
+            viewmodel.Drinks = _drinkRepository.Drinks;
+            viewmodel.CurrentCategory = "Drink Category";
+
+
+            return View(viewmodel);
         }
     }
 }
