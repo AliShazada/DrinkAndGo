@@ -29,8 +29,7 @@ namespace DrinkAndGo.Controllers
             DrinkListViewModel viewmodel = new DrinkListViewModel();
             viewmodel.Drinks = _drinkRepository.Drinks;
             viewmodel.CurrentCategory = "Drink Category";
-
-
+            
             return View(viewmodel);
         }
     }
